@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Advice Generator
+This project was created as an exercise to practice React features and CSS. The goal was to build a small application that fetches a random piece of advice from an API and displays it on the screen. Users can click a button to generate a new piece of advice.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features Practiced
+- **React State**: Managing and updating the state using `useState`.
+- **React Effects**: Using `useEffect` to fetch data from an external API when the component mounts.
+- **Event Handling**: Handling button clicks to trigger functions (in this case, fetching a new piece of advice).
+- **Componentization**: Splitting the app into reusable components like `AdviceText` and `AdviceButton`.
+- **CSS Styling**: Using CSS to style the app with a responsive and clean layout.
+- 
+## How It Works
+1. On load, the app fetches a random piece of advice from the [AdviceSlip API](https://api.adviceslip.com/advice).
+2. The advice is displayed along with its ID.
+3. A button is provided to generate a new piece of advice when clicked, which fetches a new random piece of advice from the API and updates the displayed advice.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+- **React**: JavaScript library for building user interfaces.
+- **CSS**: For styling the components and the overall layout.
+- **AdviceSlip API**: Free API to get random pieces of advice.
+- 
+## Getting Started
+To run this project locally:
+1. Clone the repository:
+   git clone https://github.com/SEU-USUARIO/advice-generator.git
+   
+3. Navigate into the project folder:
+   cd advice-generator
+   
+5. Install the dependencies:
+   npm install
+   
+6. Start the development server:
+   npm start || npm run dev
+   
+Now the app should be running at http://localhost:3000.
