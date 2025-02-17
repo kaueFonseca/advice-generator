@@ -17,7 +17,7 @@ This project was created as an exercise to practice React features and CSS. The 
 - **React**: JavaScript library for building user interfaces.
 - **CSS**: For styling the components and the overall layout.
 - **AdviceSlip API**: Free API to get random pieces of advice.
-- 
+
 ## Getting Started
 To run this project locally:
 1. Clone the repository:
